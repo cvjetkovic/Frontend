@@ -21,7 +21,22 @@ https://cvsystems.rs
 </head>
 
 <body>
-  <!--- <flex class="v" style="flex: 1; height: 500px;">
+
+  <flex class="v" style="flex: 1; height:100%;">
+    <flex-item class="header" style="flex: 1;">Header</flex-item>
+    <flex-resizer id="hideShowOnClickHeader"></flex-resizer>
+    <flex class="h" style="flex: 12;">
+      <flex-item class="leftMenu" style="flex: 1;">Left</flex-item>
+      <flex-resizer id="hideShowOnClickLeft"></flex-resizer>
+      <flex class="v" style="flex: 6; ">
+        <flex-item class="center" style="flex: 1; ">Center</flex-item>
+      </flex>
+    </flex>
+    <flex-resizer id="hideShowOnClickFooter"></flex-resizer>
+    <flex-item class="footer" style="flex: 1;">Footer</flex-item>
+  </flex>
+
+  <!-- - <flex class="v" style="flex: 1; height: 500px;">
       <flex-item style="flex: 1;">Flex 1</flex-item>
       <flex-resizer></flex-resizer>
       <flex class="h" style="flex: 1;">
@@ -43,7 +58,7 @@ https://cvsystems.rs
       </flex>
     </flex> -->
 
-  <!--<flex class="v" style="flex: 1; height: 500px;">
+  <!-- <flex class="v" style="flex: 1; height: 500px;">
         <flex-item style="flex: 1;">Flex 1</flex-item>
         <flex-resizer></flex-resizer>
         <flex-item style="flex: 1;">Flex 2</flex-item>
@@ -54,23 +69,7 @@ https://cvsystems.rs
             <flex-resizer></flex-resizer>
             <flex-item style="flex: 1;">Flex 2</flex-item>
             </flex>
-        </flex>-->
-
-  <flex class="v" style="flex: 1; height:100%;">
-    <flex-item class="header" style="flex: 1;">Header</flex-item>
-    <flex-resizer id="hideShowOnClickHeader"></flex-resizer>
-    <flex class="h" style="flex: 12;">
-      <flex-item class="leftMenu" style="flex: 1;">Left</flex-item>
-      <flex-resizer id="hideShowOnClickLeft"></flex-resizer>
-      <flex class="v" style="flex: 6; ">
-        <flex-item style="flex: 1; ">Center</flex-item>
-      </flex>
-    </flex>
-    <flex-resizer id="hideShowOnClickFooter"></flex-resizer>
-    <flex-item class="footer" style="flex: 1;">Footer</flex-item>
-  </flex>
-
-
+        </flex> -->
 
 </body>
 

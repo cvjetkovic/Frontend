@@ -12,8 +12,7 @@ https://cvsystems.rs
 */
 body,html {
     height: 100%;
-    margin:0;
-    	
+    margin:0; 	
 }
 
 flex {
@@ -22,7 +21,6 @@ flex {
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
  flex-item > flex {
@@ -49,10 +47,9 @@ flex-item {
 flex > flex-resizer {
     flex: 0 0 6px;
 	/* background: white; */
-	background-color: #93c9ff44;
+	background-color: #45bcf346;
 	background-repeat: no-repeat;
     background-position: center;
-
 }
 
 flex.h > flex-resizer {
@@ -79,3 +76,19 @@ flex.v > flex-resizer {
     flex: 0 !important;
     transition: all .3s linear;
 }
+
+/* .header{
+    background: rgb(46, 46, 46);
+}
+
+.leftMenu{
+    background: rgb(39, 39, 39);
+}
+
+.center{
+    background: white;
+}
+
+.footer{
+    background: white;
+} */
