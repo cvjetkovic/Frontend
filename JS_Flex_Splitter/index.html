@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  __       _________    ____       _____            __                     
+ / /     _/_/ ____/ |  / /\ \     / ___/__  _______/ /____  ____ ___  _____
+/ /    _/_// /    | | / /  \ \    \__ \/ / / / ___/ __/ _ \/ __ `__ \/ ___/
+\ \  _/_/ / /___  | |/ /   / /   ___/ / /_/ (__  ) /_/  __/ / / / / (__  ) 
+ \_\/_/   \____/  |___/   /_/   /____/\__, /____/\__/\___/_/ /_/ /_/____/  
+                                     /____/                                
+
+https://cvsystems.rs
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>flex-splitter</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!--- <flex class="v" style="flex: 1; height: 500px;">
+      <flex-item style="flex: 1;">Flex 1</flex-item>
+      <flex-resizer></flex-resizer>
+      <flex class="h" style="flex: 1;">
+        <flex-item style="flex: 1; background-color: aqua;">Flex 2</flex-item>
+        <flex-resizer></flex-resizer>
+        <flex class="v" style="flex: 2; ">
+          <flex-item style="flex: 1; background: pink;">Flex 3</flex-item>
+          <flex-resizer></flex-resizer>
+          <flex class="h" style="flex: 1">
+            <flex-item style="flex: 1; background: green;">Flex 4</flex-item>
+            <flex-resizer></flex-resizer>
+            <flex-item style="flex: 2;">Flex 5</flex-item>
+            <flex-resizer></flex-resizer>
+            <flex-item style="flex: 3; background: darkorange;"
+              >Flex 6</flex-item
+            >
+          </flex>
+        </flex>
+      </flex>
+    </flex> -->
+
+  <!--<flex class="v" style="flex: 1; height: 500px;">
+        <flex-item style="flex: 1;">Flex 1</flex-item>
+        <flex-resizer></flex-resizer>
+        <flex-item style="flex: 1;">Flex 2</flex-item>
+
+        <flex-resizer></flex-resizer>
+        <flex class="h" style="flex: 1; height: 500px;">
+            <flex-item style="flex: 1;">Flex 1</flex-item>
+            <flex-resizer></flex-resizer>
+            <flex-item style="flex: 1;">Flex 2</flex-item>
+            </flex>
+        </flex>-->
+
+  <flex class="v" style="flex: 1; height:100%;">
+    <flex-item class="header" style="flex: 1;">Header</flex-item>
+    <flex-resizer id="hideShowOnClickHeader"></flex-resizer>
+    <flex class="h" style="flex: 12;">
+      <flex-item class="leftMenu" style="flex: 1;">Left</flex-item>
+      <flex-resizer id="hideShowOnClickLeft"></flex-resizer>
+      <flex class="v" style="flex: 6; ">
+        <flex-item style="flex: 1; ">Center</flex-item>
+      </flex>
+    </flex>
+    <flex-resizer id="hideShowOnClickFooter"></flex-resizer>
+    <flex-item class="footer" style="flex: 1;">Footer</flex-item>
+  </flex>
+
+
+
+</body>
+
+</html>
